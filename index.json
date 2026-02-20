@@ -1,0 +1,384 @@
+{
+  "shredder": {
+    "url": "https://github.com/Druid520/Shredder",
+    "build": "gcc",
+    "args": "-std=c99 -Wall -Wextra -O2",
+    "main": "shredder.c",
+    "output": "shredder",
+    "description": "shreder bytecode language"
+  },
+  "htop": {
+    "url": "https://github.com/htop-dev/htop",
+    "build": "autoconf",
+    "output": "htop",
+    "description": "interactive process viewer"
+  },
+  "btop": {
+    "url": "https://github.com/aristocratos/btop",
+    "build": "make",
+    "output": "btop",
+    "description": "beautiful resource monitor -- requires GCC 14+"
+  },
+  "neovim": {
+    "url": "https://github.com/neovim/neovim",
+    "build": "cmake",
+    "args": "-DCMAKE_BUILD_TYPE=Release",
+    "output": "nvim",
+    "description": "hyperextensible vim-based text editor"
+  },
+  "tmux": {
+    "url": "https://github.com/tmux/tmux",
+    "build": "autoconf",
+    "output": "tmux",
+    "description": "terminal multiplexer"
+  },
+  "jq": {
+    "url": "https://github.com/jqlang/jq",
+    "build": "autoconf",
+    "output": "jq",
+    "description": "command-line JSON processor"
+  },
+  "nnn": {
+    "url": "https://github.com/jarun/nnn",
+    "build": "make",
+    "output": "nnn",
+    "description": "fast terminal file manager"
+  },
+  "tig": {
+    "url": "https://github.com/jonas/tig",
+    "build": "autoconf",
+    "output": "tig",
+    "description": "ncurses git repository browser"
+  },
+  "fastfetch": {
+    "url": "https://github.com/fastfetch-cli/fastfetch",
+    "build": "cmake",
+    "args": "-DCMAKE_BUILD_TYPE=Release",
+    "output": "fastfetch",
+    "description": "fast system info fetcher written in C"
+  },
+  "taskwarrior": {
+    "url": "https://github.com/GothenburgBitFactory/taskwarrior",
+    "build": "cmake",
+    "args": "-DCMAKE_BUILD_TYPE=Release",
+    "output": "task",
+    "description": "command-line task manager"
+  },
+  "ag": {
+    "url": "https://github.com/ggreer/the_silver_searcher",
+    "build": "autoconf",
+    "output": "ag",
+    "description": "The Silver Searcher -- blazing fast code search"
+  },
+  "nmap": {
+    "url": "https://github.com/nmap/nmap",
+    "build": "autoconf",
+    "output": "nmap",
+    "description": "network exploration and security scanner"
+  },
+  "mtr": {
+    "url": "https://github.com/traviscross/mtr",
+    "build": "autoconf",
+    "output": "mtr",
+    "description": "traceroute + ping network diagnostic"
+  },
+  "masscan": {
+    "url": "https://github.com/robertdavidgraham/masscan",
+    "build": "make",
+    "output": "masscan",
+    "description": "world's fastest TCP port scanner"
+  },
+  "cmatrix": {
+    "url": "https://github.com/abishekvashok/cmatrix",
+    "build": "cmake",
+    "args": "-DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+    "output": "cmatrix",
+    "description": "Matrix rain in your terminal"
+  },
+  "sl": {
+    "url": "https://github.com/mtoyoda/sl",
+    "build": "make",
+    "output": "sl",
+    "description": "steam locomotive crosses your terminal"
+  },
+  "cbonsai": {
+    "url": "https://gitlab.com/jallbrit/cbonsai",
+    "build": "make",
+    "output": "cbonsai",
+    "description": "grow bonsai trees in your terminal"
+  },
+  "cava": {
+    "url": "https://github.com/karlstav/cava",
+    "build": "autoconf",
+    "output": "cava",
+    "description": "terminal audio visualiser"
+  },
+  "zstd": {
+    "url": "https://github.com/facebook/zstd",
+    "build": "cmake",
+    "args": "-DCMAKE_BUILD_TYPE=Release",
+    "output": "zstd",
+    "description": "fast lossless compression"
+  },
+  "ninja": {
+    "url": "https://github.com/ninja-build/ninja",
+    "build": "cmake",
+    "args": "-DCMAKE_BUILD_TYPE=Release",
+    "output": "ninja",
+    "description": "small fast build system"
+  },
+  "mpv": {
+    "url": "https://github.com/mpv-player/mpv",
+    "build": "meson",
+    "output": "mpv",
+    "description": "fast cross-platform media player"
+  },
+  "ripgrep": {
+    "url": "https://github.com/BurntSushi/ripgrep",
+    "build": "cargo",
+    "output": "rg",
+    "description": "fast recursive grep replacement written in Rust"
+  },
+  "bat": {
+    "url": "https://github.com/sharkdp/bat",
+    "build": "cargo",
+    "output": "bat",
+    "description": "cat clone with syntax highlighting and Git integration"
+  },
+  "fd": {
+    "url": "https://github.com/sharkdp/fd",
+    "build": "cargo",
+    "output": "fd",
+    "description": "fast user-friendly find alternative"
+  },
+  "exa": {
+    "url": "https://github.com/ogham/exa",
+    "build": "cargo",
+    "output": "exa",
+    "description": "modern replacement for ls"
+  },
+  "lsd": {
+    "url": "https://github.com/lsd-rs/lsd",
+    "build": "cargo",
+    "output": "lsd",
+    "description": "next-gen ls with icons and colours"
+  },
+  "zoxide": {
+    "url": "https://github.com/ajeetdsouza/zoxide",
+    "build": "cargo",
+    "output": "zoxide",
+    "description": "smarter cd command that learns your habits"
+  },
+  "delta": {
+    "url": "https://github.com/dandavison/delta",
+    "build": "cargo",
+    "output": "delta",
+    "description": "syntax-highlighting pager for git diff output"
+  },
+  "tokei": {
+    "url": "https://github.com/XAMPPRocky/tokei",
+    "build": "cargo",
+    "output": "tokei",
+    "description": "count lines of code blazingly fast"
+  },
+  "hyperfine": {
+    "url": "https://github.com/sharkdp/hyperfine",
+    "build": "cargo",
+    "output": "hyperfine",
+    "description": "command-line benchmarking tool"
+  },
+  "dust": {
+    "url": "https://github.com/bootandy/dust",
+    "build": "cargo",
+    "output": "dust",
+    "description": "more intuitive du replacement"
+  },
+  "procs": {
+    "url": "https://github.com/dalance/procs",
+    "build": "cargo",
+    "output": "procs",
+    "description": "modern replacement for ps"
+  },
+  "bottom": {
+    "url": "https://github.com/ClementTsang/bottom",
+    "build": "cargo",
+    "output": "btm",
+    "description": "graphical process and system monitor written in Rust"
+  },
+  "helix": {
+    "url": "https://github.com/helix-editor/helix",
+    "build": "cargo",
+    "output": "hx",
+    "description": "post-modern modal text editor written in Rust"
+  },
+  "starship": {
+    "url": "https://github.com/starship/starship",
+    "build": "cargo",
+    "output": "starship",
+    "description": "minimal blazing-fast cross-shell prompt"
+  },
+  "mcfly": {
+    "url": "https://github.com/cantino/mcfly",
+    "build": "cargo",
+    "output": "mcfly",
+    "description": "fly through your shell history with smart search"
+  },
+  "lazygit": {
+    "url": "https://github.com/jesseduffield/lazygit",
+    "build": "go",
+    "output": "lazygit",
+    "description": "simple terminal UI for git commands"
+  },
+  "lazydocker": {
+    "url": "https://github.com/jesseduffield/lazydocker",
+    "build": "go",
+    "output": "lazydocker",
+    "description": "lazy Docker terminal UI"
+  },
+  "glow": {
+    "url": "https://github.com/charmbracelet/glow",
+    "build": "go",
+    "output": "glow",
+    "description": "render markdown in the terminal"
+  },
+  "fzf": {
+    "url": "https://github.com/junegunn/fzf",
+    "build": "go",
+    "output": "fzf",
+    "description": "general-purpose command-line fuzzy finder"
+  },
+  "k9s": {
+    "url": "https://github.com/derailed/k9s",
+    "build": "go",
+    "output": "k9s",
+    "description": "terminal UI to interact with Kubernetes clusters"
+  },
+  "hugo": {
+    "url": "https://github.com/gohugoio/hugo",
+    "build": "go",
+    "output": "hugo",
+    "description": "world's fastest static site generator"
+  },
+  "yq": {
+    "url": "https://github.com/mikefarah/yq",
+    "build": "go",
+    "output": "yq",
+    "description": "portable YAML/JSON/XML processor -- like jq for YAML"
+  },
+  "caddy": {
+    "url": "https://github.com/caddyserver/caddy",
+    "build": "go",
+    "output": "caddy",
+    "description": "fast automatic HTTPS web server"
+  },
+  "yt-dlp": {
+    "url": "https://github.com/yt-dlp/yt-dlp",
+    "build": "python",
+    "output": "yt-dlp",
+    "description": "feature-rich youtube and video downloader"
+  },
+  "thefuck": {
+    "url": "https://github.com/nvbn/thefuck",
+    "build": "python",
+    "output": "thefuck",
+    "description": "corrects your previous console command"
+  },
+  "httpie": {
+    "url": "https://github.com/httpie/cli",
+    "build": "python",
+    "output": "http",
+    "description": "modern user-friendly HTTP client for the API era"
+  },
+  "bpytop": {
+    "url": "https://github.com/aristocratos/bpytop",
+    "build": "python",
+    "output": "bpytop",
+    "description": "resource monitor -- Python predecessor to btop"
+  },
+  "tldr": {
+    "url": "https://github.com/tldr-pages/tldr-python-client",
+    "build": "python",
+    "output": "tldr",
+    "description": "simplified community-driven man pages"
+  },
+  "zls": {
+    "url": "https://github.com/zigtools/zls",
+    "build": "zig",
+    "output": "zls",
+    "description": "Zig language server"
+  },
+  "bun": {
+    "url": "https://github.com/oven-sh/bun",
+    "build": "zig",
+    "args": "-Doptimize=ReleaseFast",
+    "output": "bun",
+    "description": "incredibly fast JavaScript runtime and bundler"
+  },
+  "ripgrep-all": {
+    "url": "https://github.com/phiresky/ripgrep-all",
+    "build": "cargo",
+    "output": "rga",
+    "description": "Search tool like ripgrep but with PDF, DOCX, and other formats"
+  },
+  "sd": {
+    "url": "https://github.com/chmln/sd",
+    "build": "cargo",
+    "output": "sd",
+    "description": "find & replace CLI tool written in Rust"
+  },
+  "xsv": {
+    "url": "https://github.com/BurntSushi/xsv",
+    "build": "cargo",
+    "output": "xsv",
+    "description": "fast CSV command-line toolkit"
+  },
+  "glances": {
+    "url": "https://github.com/nicolargo/glances",
+    "build": "python",
+    "output": "glances",
+    "description": "cross-platform monitoring tool"
+  },
+  "poetry": {
+    "url": "https://github.com/python-poetry/poetry",
+    "build": "python",
+    "output": "poetry",
+    "description": "Python dependency management and packaging"
+  },
+  "pyenv": {
+    "url": "https://github.com/pyenv/pyenv",
+    "build": "bash",
+    "output": "pyenv",
+    "description": "Python version management"
+  },
+  "direnv": {
+    "url": "https://github.com/direnv/direnv",
+    "build": "go",
+    "output": "direnv",
+    "description": "environment switcher for your shell"
+  },
+  "chezmoi": {
+    "url": "https://github.com/twpayne/chezmoi",
+    "build": "go",
+    "output": "chezmoi",
+    "description": "manage your dotfiles across multiple machines"
+  },
+  "gojq": {
+    "url": "https://github.com/itchyny/gojq",
+    "build": "go",
+    "output": "gojq",
+    "description": "jq implemented in Go"
+  },
+  "vifm": {
+    "url": "https://github.com/vifm/vifm",
+    "build": "make",
+    "output": "vifm",
+    "description": "ncurses-based file manager with vi keybindings"
+  },
+  "calculator": {
+    "url": "https://github.com/mnogu/go-calculator",
+    "build": "go",
+    "output": "calculator",
+    "args": "./cmd/calculator",
+    "description": "simple Go calculator CLI"
+  }
+}
