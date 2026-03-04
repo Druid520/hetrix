@@ -34,26 +34,11 @@
   INSTALL METHODS
 --------------------------------------------------------------------------------
 
-  Shell script (recommended):
-
     ./hetrix.sh                       build + install to /usr/local/bin
     ./hetrix.sh --prefix ~/.local     install without root
     ./hetrix.sh --no-install          build only  (output: ./hetrix)
     ./hetrix.sh --no-seed             skip copying index.json
-
-  Make:
-
-    make
-    sudo make install                 installs to /usr/local/bin
-    make install PREFIX=~/.local      user install
-
-  CMake:
-
-    mkdir build && cd build
-    cmake .. -DCMAKE_BUILD_TYPE=Release
-    make -j$(nproc)
-    sudo make install
-
+    
 --------------------------------------------------------------------------------
   REQUIREMENTS
 --------------------------------------------------------------------------------
@@ -297,6 +282,12 @@
     ./configgy.sh search <query>   search by name, URL, or description
     ./configgy.sh validate         check index.json for JSON syntax errors
     ./configgy.sh format           pretty-print index.json in place
+  
+  Or:
+  
+  ```
+  ./configgy.sh
+  ```
 
   The add command prompts for all fields including pull_type and auto_add_cmds.
   The remove command offers: index only, or index + delete binary from bin/.
