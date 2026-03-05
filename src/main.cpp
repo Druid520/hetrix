@@ -3,6 +3,8 @@
 #include <vector>
 #include <optional>
 #include <filesystem>
+#include <thread>
+#include <algorithm>
 
 #include "logger.hpp"
 #include "utils.hpp"
@@ -312,7 +314,7 @@ int cmdIndex(const Opts& opts) {
     if (!opts.editIndex) return 0;
 
     std::string editor;
-    for (auto& e : {"micro", "hx", "helix", "vim", "nvim", "nano", "vi", "emacs"}) {
+    for (auto& e : {"micro", "hx", "helix", "vim", "nvim", "nano", "vi"}) {
         if (Utils::commandExists(e)) { editor = e; break; }
     }
     const char* envEd = std::getenv("EDITOR");
@@ -321,7 +323,7 @@ int cmdIndex(const Opts& opts) {
     if (envVi && envVi[0] != '\0') editor = envVi;
 
     if (editor.empty()) {
-        Logger::err("No editor found. Install micro or set $EDITOR(lol tedd was here)");
+        Logger::err("No editor found. Install micro or set $EDITOR.");
         Logger::info("Edit manually: " + path);
         return 1;
     }
@@ -337,7 +339,7 @@ int cmdClean(const Opts& opts) {
         std::string target = ws + "/" + opts.arg;
         Logger::banner("cleaning workspace: " + opts.arg);
         if (!Utils::exists(target)) {
-            Logger::info("Nothing to clean for (so cool)'" + opts.arg + "'.");
+            Logger::info("Nothing to clean for '" + opts.arg + "'.");
             return 0;
         }
         Logger::cleaning("removing " + target + " ...");
