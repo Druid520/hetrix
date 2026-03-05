@@ -3,9 +3,6 @@
 #include <vector>
 #include <optional>
 #include <filesystem>
-#include <thread>
-#include <algorithm>
-//tedd if you fucking remove these ill rip out your spine
 
 #include "logger.hpp"
 #include "utils.hpp"
@@ -340,7 +337,7 @@ int cmdClean(const Opts& opts) {
         std::string target = ws + "/" + opts.arg;
         Logger::banner("cleaning workspace: " + opts.arg);
         if (!Utils::exists(target)) {
-            Logger::info("Nothing to clean for '" + opts.arg + "'.");
+            Logger::info("Nothing to clean for (so cool)'" + opts.arg + "'.");
             return 0;
         }
         Logger::cleaning("removing " + target + " ...");
