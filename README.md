@@ -1,4 +1,4 @@
-# HETRIX AND ME HAVE FULLY MOVED TO CODEBERG!!! PLEASE VISIT https://codeberg.org/Druid520/hetrix FOR THE NEW REPO WITH UPDATES
+# **HETRIX AND ME HAVE FULLY MOVED TO CODEBERG!!! PLEASE VISIT https://codeberg.org/Druid520/hetrix FOR THE NEW REPO WITH UPDATES**
   
   HETRIX  --  source-based package manager  *  v1.1
   Fetches source code, builds it, installs the binary.
