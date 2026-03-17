@@ -1,4 +1,4 @@
-<span style="color:red; font-size: 2em;">HETRIX AND ME HAVE FULLY MOVED TO CODEBERG!!! PLEASE VISIT https://codeberg.org/Druid520/hetrix FOR THE NEW REPO WITH UPDATES</span>
+# HETRIX AND ME HAVE FULLY MOVED TO CODEBERG!!! PLEASE VISIT https://codeberg.org/Druid520/hetrix FOR THE NEW REPO WITH UPDATES
   
   HETRIX  --  source-based package manager  *  v1.1
   Fetches source code, builds it, installs the binary.
